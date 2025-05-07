@@ -1,0 +1,85 @@
+* {
+  font-family: Comic Sans MS;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-container {
+    background-color: #222;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    width: 800px;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .pass-box {
+    background-color: #fff;
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2rem;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: 0.5rem;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #fff;
+    transition: scale 0.2s ease-in ;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #222;
+    scale: 1.1;
+  }
+  
+  .btn-large {
+    display: block;
+  }
+  
+  label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 10px; 
+  }
+  
+  .options {
+    width: 300px;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .checked-box option {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+  }

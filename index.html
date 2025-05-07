@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Password Generator</title>
+  </head>
+  <body style="background-color:lightblue;">
+    
+
+    <div class="pass-container">
+    	<h2>PASSWORD GENERATOR</h2>
+      <div class="options">
+        <!-- choose length -->
+        <label>Choose the length for your password</label>
+        <div class="option">
+          <input type="range"
+                 id="slider"
+                 value="1"
+                 min="1"
+                 max="50"
+          >
+          <input
+            class="number-box"
+            type="number"
+            id="length"
+            value="0"
+            min="1"
+            max="50"
+          />
+        </div>
+        <!-- uppercase -->
+        <div class="option checked-box">
+          <label>UpperCase:</label>
+          <input type="checkbox" id="upperCase" />
+          <!-- lowercase -->
+          <label>LowerCase:</label>
+          <input type="checkbox" id="lowerCase" />
+        </div>
+        <!-- numbers -->
+        <div class="option checked-box">
+          <label>Numbers:</label>
+          <input type="checkbox" id="numbers" />
+          <!-- symbols -->
+          <label>Symbols:</label>
+          <input type="checkbox" id="symbols" />
+        </div>
+      </div>
+
+      <!-- show password -->
+      <h3 class="pass-box" id="result"></h3>
+      <!-- generate button -->
+      <button class="btn btn-large" id="generate">Generate password</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
